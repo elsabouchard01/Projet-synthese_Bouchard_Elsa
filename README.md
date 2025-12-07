@@ -1,1 +1,1 @@
-# Projet-synth-se_Bouchard_Elsa
+# Projet-synthese_Bouchard_Elsa
