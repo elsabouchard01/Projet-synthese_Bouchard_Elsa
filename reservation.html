@@ -30,6 +30,81 @@
     </div>
   </nav>
 
+  <main>
+    <div class="Reservation-page__banner d-flex align-items-center w-100 py-5 mb-5">
+      <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 px-3">
+        <h1 class="hero__title mb-2" data-reveal>Réservation</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mt-2 mb-0">
+            <li class="breadcrumb-item px-1" data-reveal>Accueil</li>
+            <li class="breadcrumb-separator px-1" data-reveal>/</li>
+            <li class="breadcrumb-item active px-1" aria-current="page" data-reveal>Réservation</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container-xxl py-5">
+      <div class="container d-flex justify-content-center" data-reveal>
+        <div class="Contact__form p-5" style="max-width:800px; width:100%;">
+          <h2 class="contact__form-title text-center mb-5" data-reveal>Réservez votre table</h2>
+            <form>
+              <div class="row mb-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="form-label" for="nom">Nom</label>
+                  <input type="text" id="nom" class="form-control" placeholder="Nom">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="prenom">Prénom</label>
+                  <input type="text" id="prenom" class="form-control" placeholder="Prénom">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="form-label" for="courriel">Courriel</label>
+                  <input type="email" id="courriel" class="form-control" placeholder="exemple@mail.com">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="telephone">Téléphone</label>
+                  <input type="tel" id="telephone" class="form-control" placeholder="(000)-000-0000">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="form-label" for="date">Date</label>
+                  <input type="date" id="date" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="heure">Heure</label>
+                  <input type="time" id="heure" class="form-control">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col">
+                  <label class="form-label" for="personnes">Nombre de personnes</label>
+                  <input type="number" id="personnes" class="form-control" placeholder="Ex: 4" min="1">
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea id="message" class="form-control" rows="4" placeholder="Ex: Nous préférons une table près de la fenêtre"></textarea>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="cta__btn--Style-1" data-reveal>Réserver</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
   <footer class="container-fluid footer pt-5 mt-5">
     <div class="container py-4">
       <div class="row g-5 mb-5">
