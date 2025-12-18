@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Friand'Oeuf</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg px-4 py-3 position-absolute w-100">
+    <a href="index.html" class="navbar-brand p-0" data-reveal>
+              <span class="m-0">Le Friand'<img src="assets/Images/Icônes/boiled-egg.png" style="width:28px; height:28px; margin-left:-5px; margin-right:-2.5px; margin-bottom:7px;" alt="Logo Friand’Oeuf">euf</span>
+    </a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Ouvrir le menu de navigation mobile">
+      <span class="navbar-toggler-icon white-burger"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav w-100 justify-content-center g-5 mb-2 mb-lg-0">
+        <li class="nav-item" data-reveal><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item" data-reveal><a class="nav-link" href="about.html">À propos</a></li>
+        <li class="nav-item" data-reveal><a class="nav-link active" href="menu.html">Menu</a></li>
+        <li class="nav-item" data-reveal><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item" data-reveal><a class="nav-link" href="reservation.html">Réservation</a></li>
+      </ul>
+      <a href="#" class="btn cta__btn--Style-2 mobile-btn py-2 px-3" style="width:280px;" data-reveal>Commander en ligne</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="Menu-page__banner d-flex align-items-center w-100 py-5 mb-5">
+      <div class="d-flex flex-column justify-content-center align-items-center text-center w-100 px-3">
+        <h1 class="hero__title mb-2" data-reveal>Menu</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mt-2 mb-0">
+            <li class="breadcrumb-item px-1" data-reveal><a href="index.html">Accueil</a></li>
+            <li class="breadcrumb-separator px-1" data-reveal>/</li>
+            <li class="breadcrumb-item active px-1" data-reveal aria-current="page">Menu</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="tab-class text-center position-relative">
+          <ul class="nav justify-content-center mb-4 position-relative" >
+            <li class="nav-item">
+              <a href="#" class="nav-link d-flex align-items-center text-start mx-3 active" data-filter="dejeuner">
+                <img src="assets/Images/Icônes/english-breakfast.png" alt="Icône Déjeuner" style="width:45px; height:45px;">
+                <div class="ps-2"><h4 class="mt-1">Déjeuner</h4></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link d-flex align-items-center text-start mx-3 pb-2" data-filter="diner">
+                <img src="assets/Images/Icônes/soup.png" alt="Icône Dîner" style="width:50px; height:50px;">
+                <div class="ps-2"><h4>Dîner</h4></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link d-flex align-items-center text-start mx-3 pb-2" data-filter="breuvage">
+                <img src="assets/Images/Icônes/breakfast.png" alt="Icône Boissons" style="width:50px; height:50px;">
+                <div class="ps-2"><h4 class="mt-1">Boissons</h4></div>
+              </a>
+            </li>
+            <div class="line-active position-absolute"></div>
+          </ul>
+
+          <div class="row g-4 my-5" id="menu-cards">
+
+            <!-- Déjeuner -->
+            <div class="col-md-3 menu-card" data-category="dejeuner">
+              <a href="meal_category.html" class="d-block text-decoration-none h-100">
+                <div class="card h-100">
+                  <img src="assets/Images/Menu/Déjeuner/card_brunch_classic.jpg" class="card-img-top" alt="Les Incontournables du Matin">
+                  <div class="card-body text-center">
+                    <h4 class="card-title mb-0">Les Incontournables du Matin</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 menu-card" data-category="dejeuner">
+              <a href="#" class="d-block text-decoration-none h-100">
+                <div class="card h-100">
+                  <img src="assets/Images/Menu/Déjeuner/card_brunch_benedictine.jpg" class="card-img-top" alt="Les Bénédictines Signatures">
+                  <div class="card-body text-center">
+                    <h4 class="card-title mb-0">Les Bénédictines Signatures</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 menu-card" data-category="dejeuner">
+              <a href="#" class="d-block text-decoration-none h-100">
+                <div class="card h-100">
+                  <img src="assets/Images/Menu/Déjeuner/card_brunch_sweets.jpg" class="card-img-top" alt="Les Cravings Sucrés">
+                  <div class="card-body text-center">
+                    <h4 class="card-title mb-0">Les Cravings Sucrés</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 menu-card" data-category="dejeuner">
+              <a href="#" class="d-block text-decoration-none h-100">
+                <div class="card h-100">
+                  <img src="assets/Images/Menu/Déjeuner/card_brunch_duo.jpg" class="card-img-top" alt="Les Duo-Matins">
+                  <div class="card-body text-center">
+                    <h4 class="card-title mb-0">Les Duo-Matins</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 menu-card" data-category="dejeuner">
+              <a href="#" class="d-block text-decoration-none h-100">
+                <div class="card h-100">
+                  <img src="assets/Images/Menu/Déjeuner/card_brunch_omelet.jpg" class="card-img-top" alt="Omelettes façon Friand’Oeuf">
+                  <div class="card-body text-center">
+                    <h4 class="card-title mb-0">Omelettes façon Friand’Oeuf</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 menu-card" data-category="dejeuner">
+              <a href="#" class="d-block text-decoration-none h-100">
+                <div class="card h-100">
+                  <img src="assets/Images/Menu/Déjeuner/card_brunch_healthy.jpg" class="card-img-top" alt="Les Matins Légers">
+                  <div class="card-body text-center">
+                    <h3 class="card-title mb-0">Les Matins Légers</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 menu-card" data-category="dejeuner">
+              <a href="#" class="d-block text-decoration-none h-100">
+                <div class="card h-100">
+                  <img src="assets/Images/Menu/Déjeuner/card_brunch_kids.jpg" class="card-img-top" alt="Les P’tits Friands">
+                  <div class="card-body text-center">
+                    <h4 class="card-title mb-0">Les P’tits Friands</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Dîner -->
+            <div class="col-md-3 menu-card d-none" data-category="diner">
+              <a href="#" class="d-block text-decoration-none h-100">
+                <div class="card h-100">
+                  <img src="assets/Images/Menu/Diner/card_lunch_entrees.jpg" class="card-img-top" alt="Entrées & Salades">
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Entrées & Salades</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 menu-card d-none" data-category="diner">
+              <a href="#" class="d-block text-decoration-none h-100">
+                <div class="card h-100">
+                  <img src="assets/Images/Menu/Diner/card_lunch_classiques.jpg" class="card-img-top" alt="Classiques Réconfortants">
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Classiques Réconfortants</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 menu-card d-none" data-category="diner">
+              <a href="#" class="d-block text-decoration-none h-100">
+                <div class="card h-100">
+                  <img src="assets/Images/Menu/Diner/card_lunch_sandwichs.jpg" class="card-img-top" alt="Sandwiches & Wraps">
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Sandwiches & Wraps</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 menu-card d-none" data-category="diner">
+              <a href="#" class="d-block text-decoration-none h-100">
+                <div class="card h-100">
+                  <img src="assets/Images/Menu/Diner/card_lunch_dessert.jpg" class="card-img-top" alt="Desserts & Douceurs">
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Desserts & Douceurs</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Boissons -->
+            <div class="col-md-3 menu-card d-none" data-category="breuvage">
+              <a href="#" class="d-block text-decoration-none h-100">
+                <div class="card h-100">
+                  <img src="assets/Images/Menu/Breuvages/card_breuvage_smoothie.jpg" class="card-img-top" alt="Jus & Smoothies">
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Jus & Smoothies</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 menu-card d-none" data-category="breuvage">
+              <a href="#" class="d-block text-decoration-none h-100">
+                <div class="card h-100">
+                  <img src="assets/Images/Menu/Breuvages/card_breuvage_chauds.jpg" class="card-img-top" alt="Cafés & Chauds">
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Cafés & Chauds</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 menu-card d-none" data-category="breuvage">
+              <a href="#" class="d-block text-decoration-none h-100">
+                <div class="card h-100">
+                  <img src="assets/Images/Menu/Breuvages/Card_breuvage_alcool.jpg" class="card-img-top" alt="Boissons alcoolisées">
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Boissons alcoolisées</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 menu-card d-none" data-category="breuvage">
+              <a href="#" class="d-block text-decoration-none h-100">
+                <div class="card h-100">
+                  <img src="assets/Images/Menu/Breuvages/Card_breuvage-Frais.jpg" class="card-img-top" alt="Breuvages frais & Cie">
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Breuvages frais & Cie</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container-fluid footer pt-5 mt-5">
+    <div class="container py-4">
+      <div class="row g-5 mb-5">
+        <div class="col-lg-3 col-md-6 text-start">
+          <h3 class="footer-title mb-4" data-reveal>Liens rapides</h3>
+          <a href="about.html" class="footer-link d-block mb-2 text-decoration-none" data-reveal>À propos</a>
+          <a href="menu.html" class="footer-link d-block mb-2 text-decoration-none" data-reveal>Menu</a>
+          <a href="contact.html" class="footer-link d-block mb-2 text-decoration-none" data-reveal>Contact</a>
+          <a href="reservation.html" class="footer-link d-block mb-2 text-decoration-none" data-reveal>Réservation</a>
+          <a href="#" class="footer-link d-block mb-2 text-decoration-none" data-reveal>Confidentialité</a>
+          <a href="#" class="footer-link d-block mb-2 text-decoration-none" data-reveal>Accessibilité</a>
+          <a href="#" class="footer-link d-block mb-2 text-decoration-none" data-reveal>Conditions</a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 text-start">
+          <h3 class="footer-title mb-4" data-reveal>Contact</h3>
+          <p class="mb-2 d-flex align-items-start">
+            <img src="assets/Images/Icônes/maps-and-flags-yellow.png" style="width:20px; height:20px; margin-right:12px; margin-top:2px;" alt="Adresse" data-reveal>
+            <span data-reveal>123 Rue Brunch, Montréal, Qc, Canada</span>
+          </p>
+          <p class="mb-2 d-flex align-items-start">
+            <img src="assets/Images/Icônes/phone-call-yellow.png" style="width:20px; height:20px; margin-right:12px; margin-top:2px;" alt="Téléphone" data-reveal>
+            <a href="#" class="text-decoration-none" data-reveal>(000)-000-0000</a>
+          </p>
+          <p class="mb-5 d-flex align-items-start">
+            <img src="assets/Images/Icônes/email-yellow.png" style="width:20px; height:20px; margin-right:12px; margin-top:2px;" alt="Email" data-reveal>
+            <a href="mailto:info@friandoeuf.ca" class="text-decoration-none" data-reveal>info@friandoeuf.ca</a>
+          </p>
+          <a href="#" aria-label="Facebook" data-reveal><img src="assets/Images/Icônes/facebook-yellow.png" style="width:30px; height:30px;" alt="Facebook"></a>
+          <a href="#" aria-label="Instagram" data-reveal><img src="assets/Images/Icônes/instagram-yellow.png" style="width:31px; height:31px;" alt="Instagram"></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 text-start">
+          <h3 class="footer-title mb-4" data-reveal>Horaires</h3>
+          <h4 data-reveal>Lundi au Dimanche</h4>
+          <p data-reveal>6h00 am – 15h00 pm</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 text-start">
+          <h3 class="footer-title mb-4" data-reveal>Infolettre</h3>
+          <p data-reveal>Recevez nos dernières nouvelles et offres directement dans votre boîte mail.</p>
+          <div class="d-flex" data-reveal>
+            <label for="newsletter-email" class="visually-hidden">Adresse email</label>
+            <input id="newsletter-email" type="email" placeholder="Votre email" class="form-control rounded-0 py-2" style="width:120px;">
+            <button class="btn cta__btn--Style-1 px-2">S’abonner</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer__line" data-reveal></div>
+      <div class="footer__copyright pt-4 text-center">
+        <a class="text-decoration-none" href="#" data-reveal>2025 &copy; Friand’Oeuf. Tous droits réservés</a>
+      </div>
+    </div>
+  </footer>
+
+<script src="assets/js/index.js"></script>
+</body>
+</html>
