@@ -1,4 +1,4 @@
-# Projet-synthese_Bouchard_Elsa
+# friand-oeuf-restaurant
 
 Lien GitHube Pages: https://elsabouchardweb.github.io/friand-oeuf-restaurant/
 
